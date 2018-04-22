@@ -1,3 +1,16 @@
-
+.sidebar-menu {
+  font-family: "Mukta Malar", sans-serif; }
+  .sidebar-menu li {
+    width: 100px;
+    height: 40px;
+    margin: 0 0 0 20px;
+    text-align: center;
+    list-style: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    line-height: 45px; }
+    .sidebar-menu li:hover {
+      background: #ff664f;
+      color: white; }
 
 /*# sourceMappingURL=sidebar-menu.css.map */

@@ -20,6 +20,16 @@ html, body {
 .mainBackground {
   background: whitesmoke; }
 
+.customer-page {
+  display: flex;
+  width: 65%;
+  height: 80%;
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-45%);
+  background: red; }
+
 .login-modal {
   width: 370px;
   height: 285px;
@@ -122,6 +132,21 @@ html, body {
   position: fixed;
   top: 100px;
   left: 0px; }
+
+.sidebar-menu {
+  font-family: "Mukta Malar", sans-serif; }
+  .sidebar-menu li {
+    width: 100px;
+    height: 40px;
+    margin: 0 0 0 20px;
+    text-align: center;
+    list-style: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    line-height: 45px; }
+    .sidebar-menu li:hover {
+      background: #ff664f;
+      color: white; }
 
 .links-to-forms {
   width: 370px;

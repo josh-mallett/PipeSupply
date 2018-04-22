@@ -1,3 +1,11 @@
-
+.customer-page {
+  display: flex;
+  width: 65%;
+  height: 80%;
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-45%);
+  background: red; }
 
 /*# sourceMappingURL=customer.component.css.map */
