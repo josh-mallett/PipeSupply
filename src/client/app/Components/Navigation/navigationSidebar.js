@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class Customer extends Component {
+export default class NavigationSidebar extends Component {
   constructor () {
     super(props);
 
@@ -11,8 +11,7 @@ export default class Customer extends Component {
 
   render() {
     return(
-      <div className="customer-page">
-        <MainNavigation type="customer" />
+      <div>
       </div>
     );
   }

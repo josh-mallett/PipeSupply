@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Main from './Components/main';
-import '../../../content/styles/main.sass';
+import '../../../content/styles/css/main.css';
 
 let container = document.getElementById('app');
 
