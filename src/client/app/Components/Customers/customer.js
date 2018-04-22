@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 export default class Customer extends Component {
-  constructor () {
+  constructor (props) {
     super(props);
 
     this.state = {
@@ -12,7 +12,6 @@ export default class Customer extends Component {
   render() {
     return(
       <div className="customer-page">
-        <MainNavigation type="customer" />
       </div>
     );
   }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CustomerContainer from './Customers/customerContainer';
 
 export default class Main extends Component {
   constructor () {
@@ -12,7 +13,7 @@ export default class Main extends Component {
   render() {
     return(
       <div>
-        memes memes meme supreme
+        <CustomerContainer />
       </div>
     );
   }

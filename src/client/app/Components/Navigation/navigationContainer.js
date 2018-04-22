@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import NavigationTopbar from './navigationTopbar';
+import NavigationSideBar from './navigationSidebar';
 
 export default class NavigationContainer extends Component {
-  constructor () {
+  constructor (props) {
     super(props);
 
     this.state = {
@@ -10,6 +12,11 @@ export default class NavigationContainer extends Component {
   }
 
   render() {
-    return(null);
+    return (
+      <div>
+        <NavigationTopbar />
+        <NavigationSideBar type={this.props.type}/>
+      </div>
+    );
   }
 }

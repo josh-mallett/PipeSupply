@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import NavigationContainer from '../Navigation/navigationContainer';
+import Customer from './customer';
 
 export default class CustomerContainer extends Component {
   constructor () {
@@ -12,6 +14,7 @@ export default class CustomerContainer extends Component {
   render() {
     return(
       <div>
+        <NavigationContainer type="customer"/>
         <Customer />
       </div>
     );
