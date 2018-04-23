@@ -1,9 +1,20 @@
 .customer-page 
   display: flex
   width: 65%
-  height: 80%
   position: absolute
-  top: 120px
+  top: 114px
   left: 50%
   transform: translateX(-45%)
-  background: red
+
+  .shop, .account, .orders
+    position: relative
+    width: 100%
+    height: 100%
+
+
+  .shop
+    @import 'shop'
+  .orders
+    @import 'orders' 
+  .account
+    @import 'account'

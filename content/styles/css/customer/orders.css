@@ -1,0 +1,22 @@
+.orders-title {
+  border-bottom: solid #969696 1px;
+  font-size: 30px;
+  font-family: "Mukta Malar", sans-serif;
+  margin: 0 0 10px 0; }
+
+.order {
+  width: 70%;
+  height: 170px;
+  background: white;
+  margin: 10px;
+  padding: 15px;
+  font-family: "Mukta Malar", sans-serif;
+  -webkit-box-shadow: 0px 14px 45px -21px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 14px 45px -21px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 14px 45px -21px rgba(0, 0, 0, 0.75); }
+  .order .order-title {
+    border-bottom: solid #464646 1px; }
+  .order .order-info li {
+    list-style-type: none; }
+
+/*# sourceMappingURL=orders.css.map */

@@ -7,15 +7,14 @@ export default class CustomerContainer extends Component {
     super();
 
     this.state = {
-      
     }
   }
-
+  
   render() {
     return(
       <div>
-        <NavigationContainer type="customer"/>
-        <Customer />
+        <NavigationContainer type="customer" />
+        <Customer pageType={this.state.activePage}/>
       </div>
     );
   }

@@ -5,7 +5,8 @@
   top: 0;
   left: 0;
   padding: 5px;
-  background: whitesmoke; }
+  background: whitesmoke;
+  z-index: 99999; }
   .main-header .title {
     width: 97%;
     margin: 0 auto;

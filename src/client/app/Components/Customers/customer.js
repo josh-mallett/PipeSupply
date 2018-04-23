@@ -1,34 +1,34 @@
 import React, { Component } from 'react';
+import ShopContainer from './shopContainer';
+import AccountContainer from './accountContainer';
+import OrdersContainer from './ordersContainer';
+import { Route } from 'react-router-dom';
+
 
 export default class Customer extends Component {
   constructor (props) {
     super(props);
 
     this.state = {
-      pageType: 'shop'
+      pageType: 'orders'
     }
   }
 
+  componentWillRecieveProps(nextProps) {
+    this.setState({
+      pageType: nextProps.pageType
+    });
+    
+    console.log(this.state.pageType);
+  }
 
 
   render() {
     return(
       <div className="customer-page">
-      { this.state.pageType == 'shop' &&
-        <div className="shop">
-        
-        </div>
-      }
-      { this.state.pageType == 'orders' &&
-        <div className="orders">
-
-        </div>
-      }
-      { this.state.pageType == 'account' &&
-        <div className="account">
-
-        </div>
-      }
+        <Route path="/customer/shop" component={ShopContainer} />
+        <Route path="/customer/orders" component={OrdersContainer} />
+        <Route path="/customer/account" component={AccountContainer} />
       </div>
     );
   }

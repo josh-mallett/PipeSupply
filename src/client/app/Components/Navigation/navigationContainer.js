@@ -7,7 +7,7 @@ export default class NavigationContainer extends Component {
     super(props);
 
     this.state = {
-      
+      activePage: 'shop'
     }
   }
 
@@ -15,7 +15,11 @@ export default class NavigationContainer extends Component {
     return (
       <div>
         <NavigationTopbar />
-        <NavigationSideBar type={this.props.type}/>
+        <NavigationSideBar 
+          type={this.props.type} 
+          activePage={this.state.activePage}
+          changePage={this.props.changePage}
+        />
       </div>
     );
   }

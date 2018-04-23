@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 export default class NavigationSidebar extends Component {
   constructor (props) {
@@ -14,9 +15,15 @@ export default class NavigationSidebar extends Component {
       return(
         <div className="sidebar">
           <div className="sidebar-menu">
-            <li>SHOP</li>
-            <li>ORDERS</li>
-            <li>ACCOUNT</li>
+            <Link to="/customer/shop">
+              <li>SHOP</li>
+            </Link>
+            <Link to="/customer/orders">
+              <li>ORDERS</li>
+            </Link>
+            <Link to="/customer/account">
+              <li>ACCOUNT</li>
+            </Link>
           </div>
         </div>
       );
